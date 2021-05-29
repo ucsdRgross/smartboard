@@ -109,12 +109,14 @@ void loop() {
                         Wire.endTransmission();
                       }
                       //blinks to show succesful piece move
+                      delay(100);
                       Wire.beginTransmission(9);
                       Wire.write(index+SIZE); //turn OFF LED at index
                       Wire.endTransmission();
                       Wire.beginTransmission(9);
                       Wire.write(index); //turn ON LED at index
                       Wire.endTransmission();
+                      delay(100);
                       Wire.beginTransmission(9);
                       Wire.write(index+SIZE); //turn OFF LED at index
                       Wire.endTransmission();
