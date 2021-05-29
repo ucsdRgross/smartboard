@@ -3,7 +3,7 @@ Chess Smartboard for QP Spring 2021
 
 4x4chess.ino and 4x4leds.ino are the software presented in final product
 
-4x4switches.ino simply lights LED on square led if corresponding switch is activated
+4x4switches.ino simply lights LED on square if corresponding switch on same square is activated
 
 lib2x2 was prototype to figure out matrixes, reed switches, and LEDS work using smaller board
 
