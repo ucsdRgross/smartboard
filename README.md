@@ -9,7 +9,7 @@ lib2x2 was prototype to figure out how matrixes, reed switches, and LEDS work us
 
 libraries contains Keypad library used for the reed switch matrix by Mark Stanely https://www.arduinolibraries.info/libraries/keypad
 
-all_pieces.stl contains 15 pieces with hollowed out bottoms for putting in magnets
+all_pieces.stl contains 15 pieces with hollowed out bottoms for putting in magnets'\n'
 Pyramidal tower piece selfmade, the cylindrical bases for the humanoid pieces were self made and hollowed out undersides also selfmade, but otherwise credits go to: 
 Chess pieces: https://www.thingiverse.com/thing:2153267
 Fantasy pieces (all same creator):https://www.thingiverse.com/thing:1244599
