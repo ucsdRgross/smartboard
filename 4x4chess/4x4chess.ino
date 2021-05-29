@@ -26,7 +26,7 @@ char keys[ROWS][COLS] = {
 int pieces[ROWS*COLS] = {
   1,0,0,-6,
   2,0,0,-5,
-  3,0,0,-2,
+  3,0,0,-1,
   4,0,0,-7
 };
 int curPiece = 0; //holds lifted piece, allows taking pieces (since taken piece needs to be lifted too), 0 means holding nothing
@@ -279,8 +279,6 @@ void pawnMoves(int index){
   //extract 1/-1 from curPiece
   int checkSelf = curPiece;
   checkSelf = checkSelf/abs(checkSelf);
-  //check one move ahead (no double move start since board is too small)
-  legalMove(i,j + checkSelf);
   //if positive check right diagonals
   if (checkSelf > 0){
     if (pieces[keys[i-1][j+1] - 'a'] != 0){
@@ -288,6 +286,10 @@ void pawnMoves(int index){
     }
     if (pieces[keys[i+1][j+1] - 'a'] != 0){
       legalMove(i+1,j+1);
+    }
+    //checks 1 move ahead, cannot move onto enemy
+    if (pieces[keys[i][j+1] - 'a'] == 0){
+      legalMove(i,j+1);
     }
   }
   //if negative check left diagonals
@@ -297,6 +299,10 @@ void pawnMoves(int index){
     }
     if (pieces[keys[i+1][j-1] - 'a'] != 0){
       legalMove(i+1,j-1);
+    }
+    //checks 1 move ahead, cannot move onto enemy
+    if (pieces[keys[i][j-1] - 'a'] == 0){
+      legalMove(i,j-1);
     }
   }
 }
