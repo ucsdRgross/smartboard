@@ -1,6 +1,8 @@
 # smartboard
 Chess Smartboard for QP Spring 2021
 
+The Smartboard_Demo.mp4 and Smartboard Documentation.pdf show the presented version of the project!
+
 4x4chess.ino and 4x4leds.ino are the software presented in final product
 
 4x4switches.ino simply lights LED on square if corresponding switch on same square is activated, used when making the board to check that leds and switches line up and match
