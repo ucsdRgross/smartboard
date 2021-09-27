@@ -1,5 +1,5 @@
 # smartboard
-Chess Smartboard for QP Spring 2021
+Chess Smartboard for IEEE QP Spring 2021
 
 The Smartboard_Demo.mp4 and Smartboard Documentation.pdf show the presented version of the project!
 
